@@ -10,6 +10,11 @@ body {
   padding: 0%;
 }
 
+h1, h2, h3, h4, p {
+  padding: 0%;
+  margin: 0%;
+}
+
 img {
   width: 60%;
   height: 60%;
@@ -78,7 +83,7 @@ input:focus {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-columns: .8fr 1fr 1fr 3fr;
   align-items: center;
   justify-items: center;
   background-color: aqua;
@@ -106,4 +111,50 @@ button {
 
 button:hover {
   background-color: white;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr .4fr;
+}
+
+.projects-container {
+  display: grid;
+  grid-template: .2fr repeat(3, 1fr) / 1fr 1fr;
+  justify-items: center;
+  background-color: blueviolet;
+}
+
+.card {
+  height: 90%;
+  width: 90%;
+  border-radius: 14px;
+  border-left: 8px solid darkgoldenrod;
+  background-color: azure;
+}
+
+.rightside-content {
+  display: grid;
+  grid-template-rows: .18fr 1fr .18fr 1fr;
+  justify-items: center;
+  background-color: green;
+}
+
+.announcements-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 90%;
+  background-color: azure;
+}
+
+.trending-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  width: 90%;
+  background-color: azure;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: .4fr 1fr;
 }
