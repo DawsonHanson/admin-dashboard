@@ -127,12 +127,30 @@ button:hover {
   background-color: blueviolet;
 }
 
+.projects-container > h3 {
+  justify-self: start;
+  margin-left: 6%;
+}
+
 .card {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
   height: 90%;
   width: 90%;
   border-radius: 14px;
   border-left: 8px solid darkgoldenrod;
   background-color: azure;
+}
+
+.card > div:first-child {
+  width: 90%;
+  margin-left: 6%;
+  align-self: center;
+}
+
+.icons-container {
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
 }
 
 .rightside-content {
