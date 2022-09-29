@@ -65,6 +65,7 @@ img {
   grid-template-rows: .6fr 1fr;
   background-color: white;
   box-shadow: 3px 3px 3px grey;
+  margin-bottom: 3%;
 }
 
 .search-bar, .sub-bar {
@@ -171,7 +172,6 @@ button:hover {
   display: grid;
   grid-template: .2fr repeat(3, 1fr) / 1fr 1fr;
   justify-items: center;
-  margin-top: 3%;
 }
 
 .projects-container > h2 {
@@ -223,7 +223,6 @@ button:hover {
   display: grid;
   grid-template-rows: .18fr 1fr .18fr 1fr;
   justify-items: center;
-  margin-top: 3%;
 }
 
 .rightside-content > h2 {
