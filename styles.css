@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   grid-template-columns: minmax(250px, 1fr) 4.2fr;
   margin: 0%;
   padding: 0%;
+  background-color: #d1fae5;
 }
 
 h1, h2, h3, h4, p {
@@ -25,13 +27,17 @@ img {
 
 .sidebar {
   display: grid;
-  grid-template-rows: .2fr .9fr 1fr;
+  grid-template-rows: .2fr 1fr 1fr .7fr;
+  background-color: #10b981;
 }
 
 .sidebar-item-container {
   display: grid;
   align-content: start;
-  background-color: green;
+}
+
+.sidebar-item-container:nth-child(2) {
+  margin-top: 3%;
 }
 
 .sidebar-item-container:first-child img  {
@@ -43,23 +49,28 @@ img {
   display: grid;
   grid-template-columns: .3fr .7fr;
   align-self: center;
-  background-color: aqua;
+}
+
+.sidebar h2:hover, .sidebar h3:hover {
+  color: white;
 }
 
 .main {
   display: grid;
   grid-template-rows: .23fr 1fr;
-  background-color: blue;
 }
 
 .top-bar {
   display: grid;
   grid-template-rows: .6fr 1fr;
+  background-color: white;
+  box-shadow: 3px 3px 3px grey;
 }
 
 .search-bar, .sub-bar {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  
 }
 
 input {
@@ -68,18 +79,19 @@ input {
   width: 90%;
   border: none;
   border-radius: 13px;
-  background-color: lightgray;
+  background-color: #d1fae5;
+  border: 1px solid #6ee7b7;
 }
 
 input:focus {
   outline: none;
+  background-color: white;
 }
 
 .search {
   display: grid;
   grid-template-columns: .2fr 1fr;
   align-items: center;
-  background-color: yellow;
 }
 
 .search img  {
@@ -93,7 +105,6 @@ input:focus {
   grid-template-columns: .8fr 1fr 1fr 3fr;
   align-items: center;
   justify-items: center;
-  background-color: aqua;
 }
 
 .container img:nth-child(2) {
@@ -137,14 +148,18 @@ input:focus {
 
 button {
   height: 25%;
-  width: clamp(56px, 75%, 75%);
-  background-color: chartreuse;
+  width: clamp(60px, 75%, 75%);
+  background-color: #10b981;
+  color: white;
   border: none;
   border-radius: 22px;
+  font-size: 1rem;
 }
 
 button:hover {
-  background-color: white;
+  background-color: #d1fae5;
+  border: 1px solid #6ee7b7;
+  color: black;
 }
 
 .content-container {
@@ -156,10 +171,10 @@ button:hover {
   display: grid;
   grid-template: .2fr repeat(3, 1fr) / 1fr 1fr;
   justify-items: center;
-  background-color: blueviolet;
+  margin-top: 3%;
 }
 
-.projects-container > h3 {
+.projects-container > h2 {
   justify-self: start;
   margin-left: 6%;
 }
@@ -170,8 +185,9 @@ button:hover {
   height: 90%;
   width: 90%;
   border-radius: 14px;
-  border-left: 8px solid darkgoldenrod;
-  background-color: azure;
+  border-left: 8px solid #059669;
+  background-color: white;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .card > div:first-child {
@@ -207,7 +223,7 @@ button:hover {
   display: grid;
   grid-template-rows: .18fr 1fr .18fr 1fr;
   justify-items: center;
-  background-color: green;
+  margin-top: 3%;
 }
 
 .rightside-content > h2 {
@@ -221,7 +237,8 @@ button:hover {
   grid-template-rows: repeat(3, 1fr);
   width: 90%;
   border-radius: 20px;
-  background-color: azure;
+  background-color: white;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .announcements-container > div {
@@ -250,7 +267,8 @@ button:hover {
   width: 90%;
   height: 95%;
   border-radius: 20px;
-  background-color: azure;
+  background-color: white;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .trending {
